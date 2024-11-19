@@ -1,4 +1,8 @@
 #thigh   #t#this wis wheer I will put :
+.DS_Store
+.idea/
+
+#pycharm type beat ^
 keys.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
