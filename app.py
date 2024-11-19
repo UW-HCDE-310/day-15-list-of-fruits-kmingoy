@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import keys
 
 app = Flask(__name__)
 @app.route("/")
@@ -12,4 +13,4 @@ def index():
         fruit for fruit in fruits
         if fruit["name"].startswith("o") and fruit["quantity"] > 3
     ]
-    return render_template("index.html", fruits=filtered_fruits)
+    return render_template("index.html", fruits=filtered_fruits, key_1=keys.MY_SECRET_API_KEY_1, key_2=keys.MY_SECRET_API_KEY_2)
